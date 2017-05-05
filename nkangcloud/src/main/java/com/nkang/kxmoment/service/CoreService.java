@@ -236,7 +236,7 @@ public class CoreService
 						article2.setPicUrl("https://c.ap1.content.force.com/servlet/servlet.ImageServer?id=0159000000E9j7K&oid=00D90000000pkXM");
 						article2.setUrl("http://"+Constants.baehost+"/mdm/profile.jsp?UID=" + fromUserName);
 						articleList.add(article2);
-						String hardcodeUID = "oqPI_xLq1YEJOczHi4DS2-1U0zqc";
+						String hardcodeUID = "oI3krwR_gGNsz38r1bdB1_SkcoNw";
 						if(hardcodeUID.equalsIgnoreCase(fromUserName)||MongoDBBasic.checkUserAuth(fromUserName, "isAdmin")){
 							Article article3 = new Article();
 							article3.setTitle("微管理");
