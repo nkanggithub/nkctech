@@ -6,7 +6,7 @@ public final class Constants {
 	public static final String APP_ID = "wx022b55e5bdea4c51";
 	public static final String APPSECRET = "53fead94b3acec49763585f18b7b6eac";
 	
-	
+	//https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx022b55e5bdea4c51&secret=53fead94b3acec49763585f18b7b6eac
 	public static final String BAIDU_APPKEY = "473c34a48268d02986e607cb5d7d564c";
 	public static final String BAIDU_APPSECRET  = "807640004b73f4ec49d3d3af79493ade";
 	public static final String US_ASCII = "US-ASCII";
