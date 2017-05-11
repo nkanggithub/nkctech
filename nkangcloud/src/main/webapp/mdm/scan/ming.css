@@ -1,0 +1,287 @@
+/* Ming Style */
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #190A1F;
+}
+
+#load{
+    position: relative;
+    color: #333;
+    margin: 0px auto;
+    width: 100%;
+}
+.container{
+    position: relative;
+    max-width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-top: 20%;
+    overflow: hidden;
+}
+.avatar{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 25px;
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.7);
+}
+.user{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    margin-left: -150px;
+}
+.userOne,.userTwo,.userThree,.userFour,.userFive,.userSix,.userSeven,.userEight,.userNine{
+    position: absolute;
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 0 0 10px 2px rgba(255,255,255,0.7);
+}
+.userOne{
+    top: 7px;
+    left: 50%;
+}
+.userTwo{
+    top: 35%;
+    left: 5%;
+}
+.userThree{
+    top: 65%;
+    left: 20%;
+}
+.userFour{
+    top: 85%;
+    right: 20%;
+}
+.userFive{
+    top: 25%;
+    right: 50%;
+}
+.userSix{
+    top: 40%;
+    right: 10%;
+}
+.userSeven{
+    top: 15%;
+    right: 15%;
+}
+.userEight{
+    top: 6px;
+    left: 15%;
+}
+.userNine{
+    top: 65%;
+    right: 0%;
+}
+.user img{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.border0,.border1,.border2,.border3{
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+}
+.border1{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.border2{
+    width: 200px;
+    height: 200px;
+    margin: 49px;
+}
+.border3{
+    width: 100px;
+    height: 100px;
+    margin: 49px;
+}
+
+/* radar */
+
+.radar{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.pointer {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 50%;
+}
+/* 雷达扇叶效果 */
+.pointerAnim{
+    will-change: transform;
+    -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0.02) 70%, transparent 100%);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0.02) 70%, transparent 100%);
+    -webkit-animation: rotate360 3s infinite linear;
+            animation: rotate360 3s infinite linear;
+}
+.pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    bottom: -1px;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+    border-radius: 9px;
+    -webkit-animation: extend 1s linear;
+            animation: extend 1s linear;
+}
+
+/* 延伸雷达指针 */
+
+@keyframes extend {
+    0% {
+        left: 50%;
+        width: 0;
+    }
+    to {
+        left: 0;
+        width: 50%;
+    }
+}
+
+/* 雷达旋转 */
+
+@-webkit-keyframes rotate360 {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
+
+/* 闪烁动画 */
+
+.shadow{
+    transition: 1.55s;
+    -webkit-animation: shadow 2s infinite ease;
+            animation: shadow 2s infinite ease;
+}
+
+@-webkit-keyframes shadow {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+@keyframes shadow {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+/* 果冻弹窗特效 */
+
+.flip {
+    -webkit-animation: flipAinm 0.4s ease;
+            animation: flipAinm 0.4s ease;
+}
+
+@-webkit-keyframes flipAinm {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+    }
+    45% {
+        opacity: 0.5;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+    }
+    80% {
+        opacity: 0.8;
+        transform: scale(0.95);
+        -webkit-tranform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes flipAinm {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+    }
+    45% {
+        opacity: 0.5;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+    }
+    80% {
+        opacity: 0.8;
+        transform: scale(0.95);
+        -webkit-tranform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.btn{
+    margin-top: 10%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}

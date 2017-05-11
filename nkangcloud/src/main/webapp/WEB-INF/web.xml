@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">  
+
+    <servlet>  
+        <servlet-name>coreServlet</servlet-name>  
+        <servlet-class>  
+            com.nkang.kxmoment.servlet.CoreServlet  
+        </servlet-class>  
+    </servlet>
+    <servlet-mapping>  
+        <servlet-name>coreServlet</servlet-name>  
+        <url-pattern>/coreServlet</url-pattern>  
+    </servlet-mapping>  
+  
+  
+	<servlet>
+        <servlet-name>guiServlet</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>guiServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    
+	<!-- <servlet>
+		<description>spring mvc servlet</description>
+		<servlet-name>springMvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<description>spring mvc config file</description>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springMvc</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping> -->
+
+    <welcome-file-list>  
+        <welcome-file>/mdm/DQMenu.jsp</welcome-file>  
+    </welcome-file-list> 
+<!--     <session-config>
+		<session-timeout>15</session-timeout>
+	</session-config> -->
+
+</web-app>  

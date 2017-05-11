@@ -1,0 +1,37 @@
+
+/* line 20, ../sass/pizza.scss */
+[data-pie-id] li:nth-child(1) {
+border-top:1px solid #F0F0F0;
+  color: #FF9A38;
+}
+
+/* line 20, ../sass/pizza.scss */
+[data-pie-id] li:nth-child(2) {
+  color: #FFC444;
+  display:none;
+}
+
+/* line 20, ../sass/pizza.scss */
+[data-pie-id] li:nth-child(3) {
+  color: #EA4E2F;
+  display:none;
+}
+
+/* line 20, ../sass/pizza.scss */
+[data-pie-id] li:nth-child(4) {
+  color: #FFD427;
+  display:none;
+}
+
+/* line 20, ../sass/pizza.scss 
+[data-pie-id] li:nth-child(5) {
+  color: #FFC444;
+  display:none;*/
+}
+
+
+/* line 26, ../sass/pizza.scss */
+ul[data-pie-id] {
+  list-style: none;
+  padding: 10px;
+}

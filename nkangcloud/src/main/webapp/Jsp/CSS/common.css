@@ -1,0 +1,96 @@
+@media (max-width: 376px) and (min-width:321px) {
+	.a1{left:10px!important;width:225px;}
+	.a2{left:250px!important;top:0px!important;}
+	.a3{left:10px!important;}
+	.a4{left:115px!important;width:225px;top:100px!important;}
+	.a5{left:10px!important;width:225px;top:200px!important;}
+	.a6{left:250px!important;top:200px!important;}
+	.a7{left:10px!important;top:300px!important;}
+	.a8{left:115px!important;width:225px;top:300px!important;}
+	}
+	
+/* @media (min-width:414px)  {
+	.a1{left:50px!important;}
+	.a2{left:50px!important;}
+	.a3{left:50px!important;}
+	.a4{left:50px!important;}
+	.a5{left:50px!important;}
+	.a6{left:50px!important;}
+	.a7{left:50px!important;}
+	.a8{left:50px!important;}
+	} */
+	
+/* @media (max-width: 320px)  {
+	.a1{left:50px!important;}
+	.a2{left:50px!important;}
+	.a3{left:50px!important;}
+	.a4{left:50px!important;}
+	.a5{left:50px!important;}
+	.a6{left:50px!important;}
+	.a7{left:50px!important;}
+	.a8{left:50px!important;}
+	} */
+	
+	
+/* 	世界地图 */
+	
+	@media screen and (max-width: 320px) {
+#map_base svg {
+	height: 100px;
+}
+}
+
+@media screen and (max-width: 400px) and (min-width: 321px) {
+#map_base svg {
+	height: 134px;
+}
+}
+
+@media screen and (max-width: 480px) and (min-width: 401px) {
+#map_base svg {
+	height: 170px;
+}
+}
+
+@media screen and (max-width: 568px) and (min-width: 481px) {
+#map_base svg {
+	height: 210px;
+}
+}
+
+@media screen and (max-width: 685px) and (min-width: 569px) {
+#map_base svg {
+	height: 252px;
+}
+}
+
+@media screen and (max-width: 767px) and (min-width: 686px) {
+#map_base svg {
+	height: 310px;
+}
+}
+
+@media screen and (max-width: 979px) and (min-width: 768px) {
+#map_base svg {
+	height: 360px;
+}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 980px) {
+#map_base svg {
+	height: 470px;
+}
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+#map_base svg {
+	height: 470px;
+}
+}
+
+@media screen and (min-width: 1281px) {
+#map_base svg {
+	height: 580px;
+}
+}
+	
