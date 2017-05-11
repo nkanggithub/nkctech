@@ -34,12 +34,12 @@ if (session.getAttribute("location") == null) {
 	curLoc = (String) session.getAttribute("location");
 }
 boolean IsAuthenticated=MongoDBBasic.checkUserAuth(uid,"IsAuthenticated");
-SimpleDateFormat  format = new SimpleDateFormat("yyyy-MM-dd"); 
+ SimpleDateFormat  format = new SimpleDateFormat("yyyy-MM-dd"); 
 Date date=new Date();
 String currentDate = format.format(date);
 HashMap<String, String> res=MongoDBBasic.getWeChatUserFromOpenID(uid);
 MongoDBBasic.updateVisited(uid,currentDate,"profile",res.get("HeadUrl"),res.get("NickName"));
-%>
+ %>
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
@@ -2064,12 +2064,12 @@ function getNowFormatDate() {
 														<h4>天气</h4>
 												</td>
 												<td>
-													<a target="_self" href="http://shenan.duapp.com/mdm/DailyNews.jsp?UID=<%=uid %>">
+													<a target="_self" href="http://nkctech.duapp.com/mdm/DailyNews.jsp?UID=<%=uid %>">
 														<img src="../mdm/images/Notification.png" /><h4>焦点追击</h4>
 													</a>
 												</td>
 												<td>
-												<a target="_self" href="http://shenan.duapp.com/mdm/DataVisualization.jsp?UID=<%=uid %>"><img src="../MetroStyleFiles/menu-stock.png" />
+												<a target="_self" href="http://nkctech.duapp.com/mdm/DataVisualization.jsp?UID=<%=uid %>"><img src="../MetroStyleFiles/menu-stock.png" />
 													<h4>来访足迹</h4></a>
 													 <!-- <img onclick="stockModule()"
 														src="../MetroStyleFiles/menu-stock.png" />
@@ -2093,7 +2093,7 @@ function getNowFormatDate() {
 												 <a href="face.jsp?UID=<%=uid%>">
 												 <img src="../MetroStyleFiles/menu-face.png" /></a>
 													<h4>测颜值</h4></td>
-												<td><a target="_self" href="http://shenan.duapp.com/mdm/DailyNews.jsp?UID=<%=uid %>"><img src="../MetroStyleFiles/Add1.png" />
+												<td><a target="_self" href="http://nkctech.duapp.com/mdm/DailyNews.jsp?UID=<%=uid %>"><img src="../MetroStyleFiles/Add1.png" />
 													<h4>更多应用</h4></a></td>
 											</tr>
 										</table>
